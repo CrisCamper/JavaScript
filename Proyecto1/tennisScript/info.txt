@@ -1,0 +1,4 @@
+1set = 6juegos (2 más que su rival)
+
+set empatado = 5
+el ganador es el primero que llegue a 7

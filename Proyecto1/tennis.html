@@ -11,23 +11,29 @@
     <title>Tennis</title>
 </head>
 <body>
-    <section class="container text-center tennis">
-        <h3 class="text-center">Set of tenis</h3>
+    <section class="container text-center rounded-lg tennis">
+        <h3 class="text-center p-2" >Set of tenis</h3>
 
         <form id="tennisForm">
 
             <div class="form-group">
-                <label for="playerA">Player 1</label>
-                <input type="number" name="form-control" id="playerA" required/>
+                <label for="playerA" class="text-info">Player 1</label>
+                <input type="number" class="form-control" id="playerA" placeholder="number of games" required/>
             </div>
 
             <div class="form-group">
-                <label for="playerB">Player 2</label>
-                <input type="number" name="form-control" id="playerB" required/>
+                <label for="playerB" class="text-info">Player 2</label>
+                <input type="number" class="form-control" id="playerB" placeholder="number of games"  required/>
             </div>
+
         </form>
+
+        <button type="button" class="btn btn-success p-2 m-2" onclick="winner()">Success</button>
+
+        <div id="winner" class="mb-4"></div>
     </section>
 
+    <script src="tennisScript/tennis.js"></script>
     <!-- !SCRIPTS BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>

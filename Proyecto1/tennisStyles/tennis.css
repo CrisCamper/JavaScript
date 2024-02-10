@@ -3,10 +3,7 @@
     margin: 0;
 }
 
-html{
-    background-color: #112;
-}
-
 .tennis{
-    margin: 0 center;
+    margin: 20px auto;
+    background-color: blanchedalmond;
 }

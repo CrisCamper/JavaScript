@@ -1,0 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.longestWord{
+    margin-top:10px ;
+    background-color: #ffab3d;
+}

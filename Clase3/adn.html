@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- !BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- !CSS -->
+    <link rel="stylesheet" href="adnCss/adn.css">
+    <title>ADN</title>
+</head>
+<body>
+    <section class="container text-center rounded cromosomaContainer">
+        <h1 class="p-3">ADN VERIFICATOR</h1>
+        <form>
+            <div class="form-group">
+              <label for="autorCromosoma">Input the cromosoma</label>
+              <input type="text" class="form-control" id="autorCromosoma" placeholder="00010111110110100101" required>
+            </div>
+        </form>
+        <h2>SUSPECTS</h2>
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Chromosomes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Pedro</td>
+                <td>00000101010101010101</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Juan</td>
+                <td>00101010101101110111</td>
+
+              </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Diego</td>
+                    <td>00100010010000001001</td>
+                </tr>
+            </tbody>
+          </table>
+          
+        <button id="buttonVerify" class="btn btn-danger btn-lg" onclick="wasted()">Verify</button>
+
+        <div id="verify" class="m-3"></div>
+    </section>
+    <!-- !JS -->
+    <script src="adnJs/adn.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

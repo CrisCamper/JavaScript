@@ -1,0 +1,25 @@
+dos listas (Se inyecta directamente al código):
+
+nombres = ["nombre apellido", "nombre apeliido"]
+cromosomas = ["00100001000010111011", "01000000101110111101"]
+
+Método para identificar al sospechoso:
+
+    1. Se obtiene una muestra del cromosoma del autor del 
+       delito.
+    
+    2. Se busca en la lista de cromosomas,
+       aquel cromosoma que es más parecido a la muestra
+       (Se define parecido es el que tiene más genes
+       iguales a la nuestra.)
+
+    3. Al terminar la busqueda se muestra el nombre
+       de la persona y los cromosomas que poseé con un 
+       porcentaje de parentezco.
+
+Objetivo
+   Requerimientos:
+      1. 
+      2. Sugerencias de arranque al usuario
+      3. medidas de seguridad.
+

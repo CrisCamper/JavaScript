@@ -11,3 +11,8 @@
 p{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+span{
+  color: red;
+  background: yellow;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- !BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- !CSS -->
+    <link rel="stylesheet" href="ahorcadoCss/ahorcado.css">
+    <title>Ahorcado</title>
+</head>
+
+<body>
+    <section class="container p-4 rounded">
+        <h1 class="font-weight-bold text-center">HANGED</h1>
+        <!-- ?Form word -->
+        <form>
+            <div class="form-group">
+                <label for="letter">Input a letter</label>
+                <input type="text" class="form-control" id="letter" placeholder="Example: L..." maxlength="1">
+            </div>
+        </form>
+        <div class="text-center p-4">
+            <button class="btn btn-warning" id="probeIt" onclick="guessWord()">PROBE IT</button>
+        </div>
+
+        <!-- ?Index Words -->
+        <div id="indexWords" class="text-center"></div>
+
+        <!-- ?CARD -->
+        <div class="card text-center">
+            <div class="card-header">
+                ATTEMPTS
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">YOUR ATTEMPTS: <span id="attempts">0</span></h5>
+                <h5 class="card-title">AVAILABLE ATTEMPTS: 6</h5>
+            </div>
+            <div class="card-footer text-muted">
+                made by Cris
+            </div>
+        </div>
+    </section>
+    <!-- !JS -->
+    <script src="ahorcadoJs/ahorcado.js"></script>
+
+    <!-- !BOOTSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -59,7 +59,14 @@ const getClient = (id, callback1) => {
     };
 };
 
-getClient(1, (err,client))
+// USING FUNCTION GET CLIENT
+getClient(1, (err,client) => {
+    if (err){
+        console.warn(err);
+        return
+    }
+    console.log("El nombre del cliente es: "+client);
+})
 
 // GET PRODUCT
 
@@ -73,13 +80,23 @@ const getProduct = (id, callback2) =>{
     };
 };
 
+// USING THE FUNCTION GET PRODUCT
+
+getProduct(101, (err,product) => {
+    if(err){
+        console.warn(err);
+        return
+    }
+    console.log("El producto es: "+product);
+})
+
 // GET TOTAL FACTURE
 
 const calculateTotalFacture = (products, callback3) => {
 
     let costProducts = [];
 
-    for (id in products){
+    for (id of products){
         let product = productos.find(p => p.id === id)?.precio;
         if(product){
             costProducts.push(product);
@@ -94,6 +111,17 @@ const calculateTotalFacture = (products, callback3) => {
     callback3(null, totalCost)
 };
 
+// USING THE FUNCTION CALCULATE TOTAL FACTURE
+
+const products = [101,102]
+
+calculateTotalFacture(products, (err, totalCost) => {
+    if(err){
+        console.warn(err);
+        return
+    };
+    console.log("Costo total: "+totalCost);
+})
 
 // GET INFO OF A FACTURE
 
@@ -106,3 +134,16 @@ const getFactureInfo = (id, callback4) => {
         callback4(`Factura con id ${id} no existe...`)
     }
 }
+
+// USING THE FUNCTION GET INFO OF A FACTURE
+
+getFactureInfo(1001, (err,facture) => {
+    if(err){
+        console.warn(err);
+        return
+    }
+
+    for (datos in facture){
+        console.log(datos+": "+facture[datos])
+    }
+})

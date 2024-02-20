@@ -78,4 +78,4 @@ const parImpar = (num) => {
     })
 };
 
-parImpar(190).then((positive)=>{console.warn(positive)}).catch((negative)=>{console.error(negative)})
+parImpar(190).then((positive)=>{console.warn(positive)}).catch((negative)=>{console.error(negative)});

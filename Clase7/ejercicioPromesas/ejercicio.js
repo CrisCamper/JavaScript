@@ -95,5 +95,6 @@ const getFactureInfo = (id) => {
 // !Start program
 const products = [101,102];
 
-Promise.any([getClient(1), getProduct(101), calculateTotalFacture(products)])
-    .then 
+Promise.all([getClient(1), getProduct(101), calculateTotalFacture(products)])
+    .then((positive)=> {console.log(positive)})
+    .catch((negative)=> {console.error(negative)});
